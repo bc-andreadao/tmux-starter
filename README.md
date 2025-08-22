@@ -75,6 +75,18 @@ mv /PATH/TO/FILE/tmux-starter/.tmux.conf /PATH/TO/HOME
 - Arrow keys for pane navigation
 - `Prefix %` and `Prefix "` for pane splitting
 
+## Overriding & Extending Defaults
+
+As of v0.2.0, you can now more easily override and/or extend the existing defaults from `tmux-starter`.
+You can do this by creating a custom `~/.tmux/overrides.conf` file and adding any settings and
+keybindings you would like to it. No more needing to stash your customizations before updating!
+
+Create this file using the following command:
+
+```bash
+mkdir -p ~/.tmux && echo "# Place overrides here" > ~/.tmux/overrides.conf
+```
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
